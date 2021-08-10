@@ -15,5 +15,5 @@ firebase.initializeApp(firebaseConfig);
 const projectStorage = firebase.storage();
 const projectFirestore = firebase.firestore();
 // Get timestamp when uploading
-const timeStamp = firebase.firestore.FieldValue.serverTimestamp;
+const timeStamp = firebase.firestore.FieldValue.serverTimestamp();
 export { projectFirestore, projectStorage, timeStamp };

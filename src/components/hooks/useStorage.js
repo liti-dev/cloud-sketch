@@ -31,7 +31,8 @@ export default function useStorage(file) {
         // Handle successful uploads on complete (getting download url in this case)
         const url = await storageRef.getDownloadURL();
         const createdAt = timeStamp;
-        collectionRef.add({ imgURL: url, createdAt });
+        // console.log(timeStamp);
+        collectionRef.add({ imgURL: url, createdAt: createdAt });
         setUrl(url);
       }
     );
