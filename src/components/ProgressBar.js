@@ -10,7 +10,7 @@ export default function ProgressBar({ file, setFile }) {
     if (url) {
       setFile(null);
     }
-  }, [url]);
+  }, [url, setFile]); // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <>
       <div className='progress-bar' style={{ width: progress + '%' }}></div>
