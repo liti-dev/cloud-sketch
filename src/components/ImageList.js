@@ -8,7 +8,7 @@ export default function ImageList() {
     <div className='img-grid'>
       {docs &&
         docs.map((doc) => (
-          <div key={doc.id}>
+          <div className='img-container' key={doc.id}>
             <img src={doc.imgURL} alt='cloud' />
           </div>
         ))}
