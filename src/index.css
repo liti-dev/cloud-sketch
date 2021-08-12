@@ -86,24 +86,25 @@ label:hover {
   margin: 20px auto;
 }
 .img-container {
-  /* overflow: hidden; */
+  overflow: hidden;
   height: 0;
   padding: 50% 0;
   /* padding controls height, will always be perfectly square regardless of width */
   position: relative;
 }
 .img-container img {
-  max-width: 100%;
+  max-width: 180%;
   min-height: 100%;
   position: absolute;
   opacity: 0.8;
   top: 0;
   left: 0;
-  transition: 0.7s;
+  transition: 0.9s;
   transition-timing-function: ease-in;
 }
 .img-container img:hover {
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.2);
+  cursor: pointer;
 }
 /* modal styles */
