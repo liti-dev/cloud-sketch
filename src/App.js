@@ -1,5 +1,6 @@
 import React from 'react';
-import useStorage from './components/hooks/useStorage';
+
+import ImageList from './components/ImageList';
 import Title from './components/Title';
 import UploadForm from './components/UploadForm';
 
@@ -8,6 +9,7 @@ function App() {
     <div className='App'>
       <Title />
       <UploadForm />
+      <ImageList />
     </div>
   );
 }

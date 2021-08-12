@@ -5,6 +5,7 @@ export default function ProgressBar({ file, setFile }) {
   const { url, progress } = useStorage(file);
 
   console.log('progress:', progress, 'url', url);
+  // after upload success, progress bar disappears
   useEffect(() => {
     if (url) {
       setFile(null);
